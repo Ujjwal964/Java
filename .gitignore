@@ -1,0 +1,4 @@
+#macos junk files
+.DS_Store
+*.class
+*.log
