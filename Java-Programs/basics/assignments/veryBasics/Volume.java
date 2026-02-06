@@ -1,4 +1,4 @@
-package basics.assignments;
+package basics.assignments.veryBasics;
 import java.util.*;
 
 public class Volume {

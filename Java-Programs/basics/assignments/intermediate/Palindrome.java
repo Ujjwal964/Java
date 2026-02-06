@@ -1,4 +1,4 @@
-package basics.assignments;
+package basics.assignments.intermediate;
 import java.util.*;
 // -----------------------------------------TAKING INT INPUT-------------------------------------------------
 
