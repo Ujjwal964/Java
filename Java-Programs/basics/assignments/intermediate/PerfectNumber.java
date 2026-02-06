@@ -1,0 +1,23 @@
+package basics.assignments.intermediate;
+import java.util.*;
+
+public class PerfectNumber {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number : ");
+        int n = sc.nextInt();
+
+        int sum = 0;
+        for(int i=1;i<n;i++){
+            if(n % i == 0)
+                sum = i + sum;
+        }
+        System.out.println("Initial Number : "+n);
+        System.out.println("Sum of its Divisors : "+sum);
+
+        if(sum == n)
+            System.out.println(n+" is a Perfect Number.");
+        else
+            System.out.println(n+" is not a Perfect Number.");
+    }
+}
