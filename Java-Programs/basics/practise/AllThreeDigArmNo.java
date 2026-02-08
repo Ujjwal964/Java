@@ -8,13 +8,21 @@ public class AllThreeDigArmNo {
     }
 
     static void allThreeDigitArmNo(){
+        int digit = 0;
         int sum = 0;
 
         for(int n=100;n<1000;n++){
             int i = n;
+            int dummy = n;
+
+            while(dummy>0){
+                digit++;
+                dummy = dummy / 10;
+            }
+
             while(i>0){
                 int rem = i % 10;
-                sum = rem*rem*rem + sum;
+                sum = sum + (int) Math.pow(rem , digit);
                 i = i / 10;
             }
 
@@ -22,6 +30,7 @@ public class AllThreeDigArmNo {
                 System.out.print(n+" ");
 
             sum = 0;
+            digit = 0;
         }
     }
 }
