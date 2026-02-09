@@ -1,6 +1,6 @@
 //QUES - https://leetcode.com/problems/subtract-the-product-and-sum-of-digits-of-an-integer/
 
-package leetcode.assignments.easy;
+package basics.leetcode.assignments.easy;
 import java.util.*;
 
 // -----------------------------------------PERSONAL( VSCODE )-----------------------------------------

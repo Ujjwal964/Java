@@ -13,7 +13,7 @@ public class PrimeBwTwo {
 
     static void primeInBetween(int a , int b){
         for(int i=a;i<=b;i++){
-
+            
             boolean isPrime = true;
 
             if(i <= 1)
