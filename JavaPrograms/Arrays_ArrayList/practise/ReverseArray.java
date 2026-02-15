@@ -2,7 +2,8 @@ package Arrays_ArrayList.practise;
 import java.util.*;
 
 //                       -------------USING ARRAYS---------------
-
+                                //space complexity is O(1).
+                                
 public class ReverseArray {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
@@ -64,3 +65,25 @@ public class ReverseArray {
 //         System.out.println("Reversed Array : "+list);
 //     }
 // }
+
+
+//                       -------------USING ARRAYS(2nd approach)---------------
+
+                    // to do when making presercing old array and reversing on new one, space complexity is O(N).
+
+// public class ReverseArray {
+//     public static void main(String[] args){
+//         int[] arr = {1,2,3,4,5};
+//         System.out.println("Original Array : "+Arrays.toString(arr));
+
+//         int[] reverse1 = new int[arr.length];
+//         for(int i=0;i<arr.length;i++){
+//             reverse1[i] = arr[arr.length-1-i];
+//         }
+//         System.out.println("Reversed Array : "+Arrays.toString(reverse1));
+//     }
+    
+// }
+
+//1 2 3 4 5
+// 5 4 3 2 1

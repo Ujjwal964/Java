@@ -31,6 +31,9 @@ public class ArraysBasics{
         // for(int[] a : arr1){
         //     System.out.println(Arrays.toString(a));
         // }
+
+        //4 way
+        // System.out.println("Result Image : "+Arrays.deepToString(flipImage(arr1)));
         
         
         // ----------------2D ARRAY USER INPUT----------------
@@ -61,6 +64,9 @@ public class ArraysBasics{
         // for(int row=0;row<arr2.length;row++){
         //     System.out.println(Arrays.toString(arr2[row]));
         // }
+
+        //4 way
+        // System.out.println("Result Image : "+Arrays.deepToString(flipImage(arr2)));
     }
 }
 
