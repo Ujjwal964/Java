@@ -4,7 +4,6 @@
 
 package Arrays_ArrayList.leetcode.assignments.easy;
 import java.util.*;
-
 // ----------------------------------------PERSONAL VSCODE-----------------------------------------
 
 public class ArrayRunningSum {
