@@ -1,5 +1,6 @@
 //QUES - array given having some numbers and move all even to beginning of array followed by odd. Relative order doesnot matter, just return as per condition.
 //QUES - https://leetcode.com/problems/sort-array-by-parity/submissions/
+//source - COLLEGE WALLAH (https://youtu.be/FmXF2df9OVo?si=KVxkeGeuD2QhMTIr)
 
 package Arrays_ArrayList.algorithms.twoPointer;
 import java.util.*;
