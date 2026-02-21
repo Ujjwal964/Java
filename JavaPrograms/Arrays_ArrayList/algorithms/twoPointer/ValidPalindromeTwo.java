@@ -46,7 +46,7 @@ public class ValidPalindromeTwo {
     }
 }
 
-
+    //     i   j
 // input - abbxa
 // output - true palindrome , remove x.
 
