@@ -39,13 +39,16 @@ import java.util.*;
 
 
 //TWO POINTER APPROACH
+// for sorted array , if not sorted then first sort then use two pointer.
 public class TwoSum {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        int[] arr = {1,2,4,6,18,25};
-        int target = 10;
+        int[] arr = {3,2,4};
+        int target = 6;
 
         System.out.println("Given array : "+Arrays.toString(arr));
+        Arrays.sort(arr);
+        System.out.println("Sorted array : "+Arrays.toString(arr));
         System.out.println("Index are : "+Arrays.toString(twoSum(arr , target)));
     }
 
