@@ -5,6 +5,7 @@ import java.util.*;
 
 // ----------------------------------------PERSONAL VSCODE-----------------------------------------
 //NAIVE APPROACH
+
 // public class TwoSum {
 //     public static void main(String[] args){
 //         Scanner sc = new Scanner(System.in);
