@@ -1,10 +1,10 @@
 //QUES - https://leetcode.com/problems/two-sum/
-
+//SOURCE - CTO Bhaiya (https://youtu.be/SP065oLnxGA?si=fO4xGHood241ICHg)
 package Arrays_ArrayList.algorithms.twoPointer;
 import java.util.*;
 
 // ----------------------------------------PERSONAL VSCODE-----------------------------------------
-//NAIVE APPROACH
+//BRUTE FORCE APPROACH
 
 // public class TwoSum {
 //     public static void main(String[] args){
@@ -75,4 +75,26 @@ public class TwoSum {
     }
 }
 
+
+//MAIN APPROACH USING MAP
+//refer to leetcode sol.
+
+
 // ----------------------------------------LEETCODE SOL-----------------------------------------
+//MAIN APPROACH USING MAP
+
+// class Solution {
+//     public int[] twoSum(int[] nums, int target) {
+//         HashMap<Integer , Integer> map = new HashMap<>();
+
+//         for(int i=0;i<nums.length;i++){
+//             int lookingFor = target - nums[i];
+//             if(map.containsKey(lookingFor)){
+//                 return new int[]{map.get(lookingFor) , i};
+//             }
+            
+//             map.put(nums[i] , i);
+//         }
+//         return new int[]{-1,-1};
+//     }
+// }

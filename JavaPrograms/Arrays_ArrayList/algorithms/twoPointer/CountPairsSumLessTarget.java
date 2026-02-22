@@ -1,5 +1,5 @@
 //QUES - https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/description/
-//SOURCE - CTO Bhaiya
+//SOURCE - CTO Bhaiya (https://youtu.be/SP065oLnxGA?si=fO4xGHood241ICHg)
 
 package Arrays_ArrayList.algorithms.twoPointer;
 import java.util.*;
