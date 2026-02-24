@@ -73,42 +73,42 @@ public class ThreeSum {
 // ----------------------------------------LEETCODE SOL-----------------------------------------
 //TWO POINTER APPROACH
 
-class Solution {
-    public List<List<Integer>> threeSum(int[] nums) {
-        Arrays.sort(nums);
-        List<List<Integer>> ans = new ArrayList<>();
+// class Solution {
+//     public List<List<Integer>> threeSum(int[] nums) {
+//         Arrays.sort(nums);
+//         List<List<Integer>> ans = new ArrayList<>();
 
-        for(int f=0;f<nums.length;f++){
-            if(nums[f] > 0)
-                break;
+//         for(int f=0;f<nums.length;f++){
+//             if(nums[f] > 0)
+//                 break;
 
-            if(f==0 || nums[f] != nums[f-1])
-                twoSumHelper(f , nums , ans);
-        }
-        return ans;
-    }
+//             if(f==0 || nums[f] != nums[f-1])
+//                 twoSumHelper(f , nums , ans);
+//         }
+//         return ans;
+//     }
 
-    static void twoSumHelper(int f , int[] nums , List<List<Integer>> ans){
-        int i = f+1;
-        int j = nums.length-1;
+//     static void twoSumHelper(int f , int[] nums , List<List<Integer>> ans){
+//         int i = f+1;
+//         int j = nums.length-1;
 
-        while(j > i){
-            int sum = nums[f] + nums[i] + nums[j];
-            if(sum > 0)
-                j--;
-            else if(sum < 0)
-                i++;
-            else{
-                ans.add(Arrays.asList(nums[f] , nums[i] , nums[j]));
-                i++;
-                j--;
+//         while(j > i){
+//             int sum = nums[f] + nums[i] + nums[j];
+//             if(sum > 0)
+//                 j--;
+//             else if(sum < 0)
+//                 i++;
+//             else{
+//                 ans.add(Arrays.asList(nums[f] , nums[i] , nums[j]));
+//                 i++;
+//                 j--;
 
-                while(j>i && nums[i] == nums[i-1])
-                    i++;
+//                 while(j>i && nums[i] == nums[i-1])
+//                     i++;
                 
-                while(j>i && nums[j] == nums[j+1])
-                    j--;
-            }
-        }
-    }
-}
+//                 while(j>i && nums[j] == nums[j+1])
+//                     j--;
+//             }
+//         }
+//     }
+// }
