@@ -26,7 +26,7 @@ public class FirstNegNoInEveryWindow {
         int negative = 0;
 
         while(j < arr.length){
-            
+
             if(j - i + 1 < k){
                 if(arr[j] < 0)
                     list.add(arr[j]);
@@ -56,8 +56,8 @@ public class FirstNegNoInEveryWindow {
     }
 }
 
-//         i
-//                j
+//                        i
+//                               j
 //input -> 12 -1 -7 8 -15 30 16 28 , window size = 3; 
 //output -> -1 , -1 , -7 , -15 , -15 , 0
-//approach -> list : [-1,-7] -> []
+//approach -> list : [-1,-7] -> [-1,-7] -> [-7.-15] -> [-15] -> [-15] -> [0]
