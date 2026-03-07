@@ -1,5 +1,6 @@
 //QUES - find maximun number in all subarray of size k and return them in array or list.
-//SOURCE - Aditya Verma ()
+//SOURCE - Aditya Verma (https://youtu.be/xFJXtB5vSmM?si=teowsQ2tYcuHh0N1)
+
 package Arrays_ArrayList.algorithms.slidingWindow;
 import java.util.*;
 
