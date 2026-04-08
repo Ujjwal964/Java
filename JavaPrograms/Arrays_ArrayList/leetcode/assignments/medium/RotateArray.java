@@ -1,4 +1,5 @@
 //QUES - https://leetcode.com/problems/rotate-array/
+//SOURCE - Took reference from ChatGPT (not code, only reference).
 
 package Arrays_ArrayList.leetcode.assignments.medium;
 import java.util.*;
@@ -47,27 +48,67 @@ public class RotateArray{
     //     System.out.println(Arrays.toString(arr));
     // }
     
-    //ANOTHER APPROACH (TWO POINTER)
+
+    //ANOTHER APPROACH (TWO POINTER) //NOT WORKING - TLE ❌
+    // static void rotateArray(int[] arr , int k){
+    //     if(arr.length == 0)
+    //         return;
+
+    //     k = k % arr.length;
+    //     if(k == 0)
+    //         return;
+
+    //     while(k > 0){
+    //         int i = arr.length - 2;
+    //         int j = arr.length - 1;
+
+    //         while(i >= 0 && j > i){
+    //             int temp = arr[i];
+    //             arr[i] = arr[j];
+    //             arr[j] = temp;
+    //             i--;
+    //             j--;
+    //         }
+    //         k--;
+    //     }
+    //     System.out.println(Arrays.toString(arr));
+    // }
+
+
+    //OPTIMAL APPROACH (T.C - O(N) | S.C - O(1)) ✅
     static void rotateArray(int[] arr , int k){
-        if(arr.length == 0)
-            return;
-
+        if(arr.length == 0) return;
         k = k % arr.length;
-        if(k == 0)
-            return;
+        if(k == 0) return;
 
-        while(k > 0){
-            int i = arr.length - 2;
-            int j = arr.length - 1;
-
-            while(i >= 0 && j > i){
-                int temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
-                i--;
-                j--;
-            }
-            k--;
+        int i = 0;
+        int j = arr.length-1;
+        while(j>i){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        
+        int a = 0;
+        int b = k-1;
+        while(b > a){
+            int temp = arr[a];
+            arr[a] = arr[b];
+            arr[b] = temp;
+            a++;
+            b--;
+        }
+        
+        int c = k;
+        int d = arr.length-1;
+        while(d > c){
+            int temp = arr[c];
+            arr[c] = arr[d];
+            arr[d] = temp;
+            c++;
+            d--;
         }
         System.out.println(Arrays.toString(arr));
     }
@@ -112,30 +153,45 @@ public class RotateArray{
 // }
 
 
+//OPTIMAL APPROACH (T.C - O(N) | S.C - O(1)) ✅
 
-
-//NOT WORKING - TLE
 // class Solution {
-//     public void rotate(int[] nums, int k) {
-//         if(nums.length == 0)
-//             return;
+//     public void rotate(int[] arr, int k) {
+//         if(arr.length == 0) return;
+//         k = k % arr.length;
+//         if(k == 0) return;
 
-//         k = k % nums.length;
-//         if(k == 0)
-//             return;
-
-//         while(k > 0){
-//             int i = nums.length - 2;
-//             int j = nums.length - 1;
-
-//             while(i >= 0 && j > i){
-//                 int temp = nums[i];
-//                 nums[i] = nums[j];
-//                 nums[j] = temp;
-//                 i--;
-//                 j--;
-//             }
-//             k--;
+//         int i = 0;
+//         int j = arr.length-1;
+//         while(j>i){
+//             int temp = arr[i];
+//             arr[i] = arr[j];
+//             arr[j] = temp;
+//             i++;
+//             j--;
+//         }
+        
+//         int a = 0;
+//         int b = k-1;
+//         while(b > a){
+//             int temp = arr[a];
+//             arr[a] = arr[b];
+//             arr[b] = temp;
+//             a++;
+//             b--;
+//         }
+        
+//         int c = k;
+//         int d = arr.length-1;
+//         while(d > c){
+//             int temp = arr[c];
+//             arr[c] = arr[d];
+//             arr[d] = temp;
+//             c++;
+//             d--;
 //         }
 //     }
 // }
+
+
+
