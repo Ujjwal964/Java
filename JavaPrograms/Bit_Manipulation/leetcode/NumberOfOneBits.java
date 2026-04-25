@@ -2,6 +2,8 @@
 //SOURCE - Striver (https://youtu.be/nttpF8kwgd4?si=Zf5QFIMtHorC2vcV)
 
 package Bit_Manipulation.leetcode;
+// ----------------------------------------PERSONAL VSCODE-----------------------------------------
+
 public class NumberOfOneBits {
 
     //WITHOUT BIT (BRUTE FORCE APPROACH)(SELF)✅

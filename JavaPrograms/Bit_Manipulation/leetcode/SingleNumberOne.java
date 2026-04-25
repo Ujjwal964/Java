@@ -1,9 +1,9 @@
 //QUES - https://leetcode.com/problems/single-number/
 //QUES - SINGLE NUMBER
 //SOURCE - 
-
 package Bit_Manipulation.leetcode;
 import java.util.*;
+// ----------------------------------------PERSONAL VSCODE-----------------------------------------
 
 public class SingleNumberOne{
     public static void main(String[] args){
