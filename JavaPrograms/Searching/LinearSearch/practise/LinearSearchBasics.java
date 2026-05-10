@@ -1,5 +1,5 @@
 //LINEAR SEARCH - Searching an element from start (0th Index) until we found it.
-//SOURCE - Kunal Kushwaha
+//SOURCE - Kunal Kushwaha (https://youtu.be/_HRA37X8N_Q?si=Uj-u9Mw7mImT-TzT)
 //BEST CASE SCENARIO - At 1st Index, we found the element. (Time Complexity - O(1))
 //WORST CASE SCENARIO - Element is not present in the data structure given. (Time Complexity - O(N))
 
