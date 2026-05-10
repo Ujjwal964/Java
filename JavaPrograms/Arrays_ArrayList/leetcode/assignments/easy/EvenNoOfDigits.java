@@ -17,6 +17,7 @@ public class EvenNoOfDigits {
         System.out.println("Even digit numbers are : "+countEvenDigits(nums));
     }
 
+    //1st Approach (count no of digits)
     static int countEvenDigits(int[] nums){
         int even = 0;
 
@@ -32,6 +33,18 @@ public class EvenNoOfDigits {
         }
         return even;
     }
+
+    //2nd Approach (converting to string)
+    // int CountEvenDigits(int[] arr){
+    //     int ans = 0;
+    //     for(int element : arr){
+    //         int digits = 0;
+    //         String str = Integer.toString(element);
+    //         digits = str.length();
+    //         ans += (digits % 2 == 0) ? 1 : 0;
+    //     }
+    //     return ans;
+    // }
 }
 
 //12,345,2,6,7896
