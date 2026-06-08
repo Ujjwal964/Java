@@ -77,7 +77,7 @@ public class TopKFrequentElements{
 // }
 
 
-//ANOTHER OPTIMAL APPROACH USING HEAP ( PRIORITY QUEUE )
+//ANOTHER OPTIMAL APPROACH USING HEAP ( PRIORITY QUEUE ) - MAX HEAP
 // class Solution {
 //     public int[] topKFrequent(int[] arr, int k) {
 //         Map<Integer,Integer> map = new HashMap<>();
@@ -93,6 +93,52 @@ public class TopKFrequentElements{
 //         int[] ans = new int[k];
 //         for(int i=0;i<k;i++){
 //             ans[i] = maxHeap.poll();
+//         }   
+//         return ans;
+//     }
+// }
+
+//OR - MAX HEAP
+// class Solution {
+//     public int[] topKFrequent(int[] arr, int k) {
+//         Map<Integer,Integer> map = new HashMap<>();
+//         for(int i : arr){
+//             map.put(i , map.getOrDefault(i , 0) + 1);
+//         }
+        
+//         PriorityQueue<Map.Entry<Integer,Integer>> maxHeap = new PriorityQueue<>((a,b) -> Integer.compare(b.getValue() , a.getValue()));
+//         for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+//             maxHeap.offer(entry);
+//         }
+        
+//         int[] ans = new int[k];
+//         for(int i=0;i<k;i++){
+//             ans[i] = maxHeap.poll().getKey();
+//         }   
+//         return ans;
+//     }
+// }
+
+
+//OR - MIN HEAP
+// class Solution {
+//     public int[] topKFrequent(int[] arr, int k) {
+//         Map<Integer,Integer> map = new HashMap<>();
+//         for(int i : arr){
+//             map.put(i , map.getOrDefault(i , 0) + 1);
+//         }
+        
+//         PriorityQueue<Map.Entry<Integer,Integer>> minHeap = new PriorityQueue<>((a,b) -> Integer.compare(a.getValue() , b.getValue()));
+
+//         for(Map.Entry<Integer,Integer> entry : map.entrySet()){
+//             minHeap.offer(entry);
+//             if(minHeap.size() > k) 
+//                 minHeap.poll();
+//         }
+        
+//         int[] ans = new int[k];
+//         for(int i=0;i<k;i++){
+//             ans[i] = minHeap.poll().getKey();
 //         }   
 //         return ans;
 //     }

@@ -58,3 +58,45 @@ public class UniCharInString{
 //         return -1;
 //     }
 // }
+
+
+//OR
+// class Solution {
+//     public int firstUniqChar(String s) {
+//         char[] arr = s.toCharArray();
+//         Map<Character,Integer> map = new LinkedHashMap<>(26);
+//         Queue<Character> queue = new LinkedList<>();
+//         for(char c : arr){
+//             if(map.containsKey(c)){
+//                 if(queue.contains(c))
+//                     queue.remove(c);
+//             }
+//             else{
+//                 map.put(c , 1);
+//                 queue.offer(c);
+//             }
+//         }
+//         return (! queue.isEmpty()) ? s.indexOf(queue.poll()) : -1;
+//     }
+// }
+
+
+//OR
+// class Solution {
+//     public int firstUniqChar(String s) {
+//         char[] arr = s.toCharArray();
+//         Map<Character,Integer> map = new LinkedHashMap<>(26);
+//         Queue<Character> queue = new LinkedList<>();
+//         for(char c : arr){
+//             map.put(c , map.getOrDefault(c , 0 ) + 1);
+
+//             if(map.get(c) == 1)
+//                 queue.offer(c);
+//             else{
+//                 if(queue.contains(c))
+//                     queue.remove(c);
+//             }
+//         }
+//         return (! queue.isEmpty()) ? s.indexOf(queue.poll()) : -1;
+//     }
+// }
