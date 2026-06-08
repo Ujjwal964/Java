@@ -1,4 +1,5 @@
 //QUES - Max Sum Subarray of size K (SLIDING WINDOW)
+//QUES - GFG (https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1)
 //SOURCE - Aditya Verma (https://youtu.be/KtpqeN0Goro?si=CzlH1Xa6715X6Hi4)
 
 package Arrays_ArrayList.algorithms.slidingWindow;
@@ -56,3 +57,35 @@ public class MaxSubArraySumSizeK {
 //              j
 //input - 2 5 1 8 2 9 1 , window size - 3
 // 8 14 11 19 12
+
+
+// ----------------------------------------GFG SOL-----------------------------------------
+
+// class Solution {
+//     public int maxSubarraySum(int[] arr, int k) {
+//         int i = 0;
+//         int j = 0;
+//         int sum = 0;
+//         int max = Integer.MIN_VALUE;
+        
+//         while(j < arr.length){
+//             sum = sum + arr[j];
+            
+//             if(j-i+1 < k)
+//                 j++;
+                
+//             else if(j-i+1 == k){
+//                 max = Math.max(max , sum);
+//                 j++;
+                
+//                 sum = sum - arr[i];
+//                 i++;
+//             }
+//         }
+//         return max;
+//     }
+// }
+
+//input - [100,200,300,400]
+// window size k - 2
+//max sum - 700
